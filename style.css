@@ -1,21 +1,38 @@
 .dot {
     height: 50px;
     width: 50px;
-    background-color: #bbb;
+    background-color: black;
     border-radius: 50%;
     display: inline-block;
 }
 
 .red {
-    background-color: red;
+    animation: redlight 30s infinite;
+}
+
+@keyframes redlight {
+    0%, 60% {background-color: black;}
+    61%, 99% {background-color: red;}
+    100% {background-color: black;}
 }
 
 .yellow {
-    background-color: yellow;
+    animation: yellowlight 30s infinite;
+}
+
+@keyframes yellowlight {
+    0%, 49% {background-color: black;}
+    50%, 60% {background-color: yellow;}
+    61%, 100% {background-color: black;}
 }
 
 .green {
-    background-color: green;
+    animation: greenlight 30s infinite;
+}
+
+@keyframes greenlight {
+    0%, 49% {background-color: green;}
+    50%, 100% {background-color: black;}
 }
 
 html {
