@@ -5,6 +5,17 @@
     padding: 20px;
 }
 
+.sign::after {
+    content: "Hello";
+    animation: signani 30s infinite;
+}
+
+@keyframes signani {
+    0%, 49% {color: green; content: "Go"}
+    50%, 60% {color: yellow; content: "Slow Down"}
+    61%, 100% {color: red; content: "Stop"}
+}
+
 .dot {
     height: 50px;
     width: 50px;
